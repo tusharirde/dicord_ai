@@ -1,0 +1,7 @@
+ctransformers[cuda]
+transformers
+torch
+discord.py
+python-dotenv
+gdown
+flask

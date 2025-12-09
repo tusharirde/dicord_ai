@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>✨ Discord Bot Dashboard</h1>
+            <p>Your bot status, controls, and API panel</p>
+        </header>
+
+        <section class="status-card">
+            <h2>Bot Status</h2>
+            <p id="statusText">Checking bot status...</p>
+            <button id="refreshButton">Refresh Status</button>
+        </section>
+
+        <section class="controls">
+            <h2>Bot Controls</h2>
+            <div class="button-group">
+                <button onclick="sendAction('ping')">Ping Bot</button>
+                <button onclick="sendAction('restart')">Restart Bot</button>
+                <button onclick="sendAction('stats')">Get Stats</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Verification Bot — Powered by Evil</p>
+        </footer>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
